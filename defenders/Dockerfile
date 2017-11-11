@@ -12,13 +12,28 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
   && R -e "source('https://bioconductor.org/biocLite.R')" \
   && install2.r --error \
     --deps TRUE \
-    tidyverse \
+    ade4 \
+    adehabitatHR \
+    adehabitatLT \
+    adehabitatMA \
+    AICcmodavg \
+    anytime \
+    ape \
+    assertthat \
+    bayesplot \
+    bibtext \
+    boilerplateR \
+    bookdown \
+    brew \
+    broom \
+    bsplus \
     dplyr \
-    ggmap \
-    ggplot2 \
     devtools \
     formatR \
+    ggmap \
+    ggplot2 \
     remotes
+    tidyverse \
 
 ## Notes: Above install2.r uses --deps TRUE to get Suggests dependencies as well,
 ## dplyr and ggplot are already part of tidyverse, but listed explicitly to get their (many) suggested dependencies.
